@@ -1,0 +1,10 @@
+.carousel-img{
+    max-width: 600px;
+    margin: auto;
+}
+
+#container {
+    display: inline-flexbox;
+    
+
+}
