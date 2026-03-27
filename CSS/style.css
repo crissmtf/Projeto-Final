@@ -1,0 +1,123 @@
+/* DARK MODE */
+
+.dark-mode{
+    background-color: rgb(36, 36, 52);
+    color:aliceblue
+}
+.dark-mode .card{
+    background-color: darkcyan;
+    color: aliceblue;
+}
+
+.dark-mode .card_right{
+    background-color: darkcyan;
+    color: aliceblue;
+}
+
+
+
+
+.carousel-img {
+    max-width: 600px;
+    margin: auto;
+}
+
+body{
+    background-color:rgb(255, 201, 52);
+}
+
+#title{
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 90px;
+    margin-left: 50px;
+}
+
+#title2{
+    text-align: center;
+    margin-left: 50px;
+}
+
+
+.card-deck {
+    gap: 30px;
+    padding: 20px;
+    
+    
+}
+
+.card {
+    border: solid 1px black;
+    background-color: bisque;
+    width: 500px 
+
+}
+
+/* Foto circular */
+.foto-circulo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.foto-circulo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/*-------------------------- */
+
+.aboutMe{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    padding: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+.card_right{
+    background-color: bisque;
+    width: 700px;
+    border: solid 1px black;
+    border-radius: 1%;
+    padding-top: 20px;
+    
+}
+
+.card_right_rick .card-body{
+    display:flex;
+    width: 500px;
+    border-radius: 1%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.card-title{
+    margin-left: 10px;
+}
+#lista{
+    list-style: none;
+    text-align: left;
+    padding: 2;
+}
+
+#form{
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* imagem windows */
+
+#img-window{
+    margin-top: 10px;
+    padding: auto;
+}
+

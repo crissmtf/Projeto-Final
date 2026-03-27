@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="/style.css" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous">defer</script>
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
+        defer></script>
 
-    <script src="/script.js">defer</script>
+    <link href="/CSS/style.css" rel="stylesheet">
+
+    <script src="/JavaScript/script.js" defer></script>
 
     <title>O Meu Portfólio</title>
 </head>
@@ -24,148 +25,183 @@
     <!-- ^NAVBAR -->
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">WebDev</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
+            <a class="navbar-brand" href="#">
+
+                <!-- SWITCH DARK MODE -->
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
+                    <label class="form-check-label" for="checkNativeSwitch">
+                        Dark Mode
+                    </label>
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
+
+            </a>
+
         </div>
     </nav>
     <!-- FIM NAVBAR -->
-    
-    <div class="container">
+
+    <!-- SOBRE MIM -->
+    <div id="content">
         <div>
-            <h1>OLA MUNDO</h1> 
-            <h1>O Meu Portfólio</h1>
-            <h3>Cristóvão Reis</h3>
-
-            <img src="/Imagens/RS_06927.jpg" width="200px">
-
-            <p>Olá! O meu nome é Cristóvão Reis, tenho 32 anos e sou formado em Comunicação Audiovisual. Sempre tive
-                interesse
-                por tecnologia, criatividade e pela forma como as ideias podem ganhar vida através de ferramentas
-                digitais.
-                Atualmente estou a aprofundar os meus conhecimentos na área de low-code, explorando plataformas que
-                permitem
-                criar aplicações e soluções digitais. Este portfólio mostra um pouco do meu progresso em WebDevelopment.
-            </p>
+            <h1 id="title">O Meu Portfólio</h1>
+            <h3 id="title2">Cristóvão Reis</h3>
         </div>
 
-        <!-- HOBBIES -->
-        <section>
-            <h1 id="titulo-hobbies">Os Meus Hobbies</h1>
-            <section id="container2">
-                <ul id="lista">
-                    <li>Gaming</li>
-                    <li>Editar Video</li>
-                    <li>Música</li>
-                </ul>
-
-
-                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100 carousel-img" src="/Imagens/elcroteingles.jpg" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 carousel-img" src="/Imagens/ef84adc1.jpg" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 carousel-img"
-                                src="/Imagens/f47f1da8-a022-4feb-b107-f2d13ca28a61.png" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 carousel-img" src="/Imagens/istockphoto-1560833158-612x612.jpg"
-                                alt="Fourth slide">
-                        </div>
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
+        <div class="card-deck d-flex justify-content-center flex-wrap">
+            <div class="card">
+                <div class="foto-circulo">
+                    <img id="minhaFoto" src="Imagens/RS_06927.jpg" class="card-img-top">
                 </div>
-            </section>
-<!-- FIM HOBBIES -->
 
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-danger">Danger</button>
+                <div class="aboutMe">
+                    <h5 class="card-title">Sobre Mim</h5>
+                    <p id="sobre_mim" class="card-text">Olá! O meu nome é Cristóvão Reis, tenho 32 anos e sou formado em
+                        Comunicação
+                        Audiovisual. Sempre
+                        tive
+                        interesse
+                        por tecnologia, criatividade e pela forma como as ideias podem ganhar vida através de
+                        ferramentas
+                        digitais.
+                        Atualmente estou a aprofundar os meus conhecimentos na área de low-code, explorando plataformas
+                        que
+                        permitem
+                        criar aplicações e soluções digitais. Este portfólio mostra um pouco do meu progresso em
+                        WebDevelopment.
+                    </p>
+                </div>
+            </div>
+            <!-- FIM SOBRE MIM -->
 
+            <!-- HOBBIES -->
+            <div class="card_right">
+                <div class="card-body">
+                    <h5 class="card-title">Os Meus Hobbies</h5>
+                    <section>
+                        <h1 id="titulo-hobbies"></h1>
+                        <section id="container2">
+                            <ul id="lista">
+                                <li>Gaming</li>
+                                <li>Editar Video</li>
+                                <li>Música</li>
+                            </ul>
+
+                            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0"
+                                        class="active"></button>
+                                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                                </div>
+
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block carousel-img img_rolling" src="Imagens/elcroteingles.jpg"
+                                            alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block carousel-img img_rolling" src="Imagens/ef84adc1.jpg"
+                                            alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block carousel-img img_rolling"
+                                            src="Imagens/f47f1da8-a022-4feb-b107-f2d13ca28a61.png" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block carousel-img img_rolling"
+                                            src="Imagens/istockphoto-1560833158-612x612.jpg" alt="Fourth slide">
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                        </section>
+                </div>
+            </div>
+            <!-- FIM HOBBIES -->
+        </div>
+
+        <!-- BOTOES -->
+        <div class="card-deck d-flex justify-content-center flex-wrap">
+            <div class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title">Menu</h5>
+
+                    <button type="button" class="btn btn-primary" id="mudarTema">Clica-me!</button><br>
+
+                    <button type="button" class="btn btn-danger" id="add-Hobby">Adicionar Hobby</button><br>
+
+
+                    <button type="button" class="btn btn-warning" id="mudar-img">Trocar Imagem</button><br>
+
+                    <h3 id="img-text">Windows XP</h3>
+
+                    <img id="img-window" class="card-img-top"
+                        src="https://www.adrenaline.com.br/wp-content/uploads/2023/06/windows-xp-2.jpg"
+                        alt="Card image cap">
+
+                </div>
+            </div>
+            <!-- FIM BOTOES -->
+
+            <!-- FORMULARIO -->
+            <div class="card_right">
+                <div class="card-body">
+                    <h5 class="card-title">Personalizar Portfólio</h5>
+
+                    <div id="form">
+                        <form>
+                            <!-- Nome -->
+                            <label for="nome">Nome:</label><br>
+                            <input type="text" id="nome" name="nome" required>
+                            <br>
+
+                            <!-- Texto de apresentação -->
+                            <label for="apresentacao">Apresentação:</label><br>
+                            <textarea id="apresentacao" name="apresentacao" rows="4" required></textarea>
+                            <br>
+
+                            <!-- Escolher cor -->
+                            <label for="cor">Escolhe uma cor:</label><br>
+                            <input type="color" id="cor" name="cor" value="#ffffff">
+                            <br>
+
+                            <!-- Foto -->
+                            <label for="foto">Adicionar foto:</label>
+                            <input type="file" id="foto" name="foto" accept="image/*">
+                            <br>
+                            <button type="submit">Enviar</button>
+                        </form>
+                        <p id="contador_atualizacao"></p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- FIM FORMULARIO -->
+
+            <!-- API -->
+            <div class="card_right_rick">
+                <div class="card-body">
+                    <br><button id="rick-" type="button" class="btn btn-light">Sinto-me Com Sorte 👽</button>
+                    <div id="personagem"></div>
+                </div>
+            </div>
+            <!-- FIM API -->
+        </div>
     </div>
-
-<!-- FORMULÁRIO -->
-
-    <div class="form">
-        <form>
-            <!-- Nome -->
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            <br>
-            <!-- Texto de apresentação -->
-            <label for="apresentacao">Apresentação:</label>
-            <textarea id="apresentacao" name="apresentacao" rows="4" required></textarea>
-            <br>
-            <!-- Escolher cor -->
-            <label for="cor">Escolhe uma cor:</label>
-            <input type="color" id="cor" name="cor">
-            <br>
-            <!-- Foto -->
-            <label for="foto">Adicionar foto:</label>
-            <input type="file" id="foto" name="foto" accept="image/*">
-            <br>
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-
-
+    
+                    <button type="button" class="btn btn-light" id="resetar">RESET</button><br>
 </body>
 
 </html>
