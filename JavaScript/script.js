@@ -29,8 +29,6 @@ if (contador == null) {
     localStorage.setItem("contadorPerfil", 0);
 }
 
-// document.getElementById("contador_atualizacao").innerText =
-//     `Perfil atualizado ${contador} vezes.`;
 
 // ---------------
 
